@@ -1,0 +1,18 @@
+# Php5-Apache2-armhf
+- This is the dockerfile for building image and use php5 which is already outdated.
+- Thanks for ebspace on dockerhub for provide me the initial image and I add up vim in order to edit site configuration.
+- To build the new image just do the following steps:
+-	To build image:
+- 	1. $ git clone https://github.com/aapichart/php5-apache2-armhf.git # into your home directory
+-	2. $ cd php5-apache2-armhf
+-	3. $ docker build .
+-	4. $ docker build -t yourusername/example-node-app
+-	To Upload final image to dockerhub
+-	1. $ docker login
+-	2. $ docker tag yourusername/example-node-app yourdockerhubusername/example-node-app:v1
+-	3. $ docker push yourdockerhubusername/example-node-app:v1
+-	To Pull image back to use
+-	1. $ docker pull yourdockerhubusername/example-node-app:v1
+-	2. $ docker run -d -p 8080:80 -p 8443:443 -v /home/apichart/works/mysite/rasp4.local/:/var/www/html/ 
+-		\ --name php5a2-armhf
+-		\ yourdockerhubusername/example-node-app:v1 
