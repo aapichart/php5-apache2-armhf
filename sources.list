@@ -1,6 +1,6 @@
-deb http://deb.debian.org/debian buster main contrib non-free
-deb http://deb.debian.org/debian-security/ buster/updates main contrib non-free
-deb http://deb.debian.org/debian buster-updates main contrib non-free
+deb-src http://raspbian.raspberrypi.org/raspbian/ jessie main contrib non-free
+deb-src http://raspbian.raspberrypi.org/raspbian-security/jessie/updates main contrib non-free
+deb-src http://raspbian.raspberrypi.org/raspbian jessie-updates main contrib non-free
 # Uncomment deb-src lines below then 'apt-get update' to enable 'apt-get source'
 #deb-src http://deb.debian.org/debian buster main contrib non-free
 #deb-src http://deb.debian.org/debian-security/ buster/updates main contrib non-free
